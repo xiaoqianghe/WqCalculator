@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="container">
+
+<view class='bg' style="background-image: url('../../img/bg.png');">
+<!-- //设置  首页背景图片 -->
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <!-- <text class="user-motto">123456</text> -->
+
+
+
+    <button type='default' size="{{primarySize}}" plain="{{plain}}"
+    hover-class="button-hover"
+    disabled="{{disabled}}" bindtap="toCalc">{{motto}}
+    
+    
+    </button>
+
+    <!-- {{motto}} -->
+  </view>
+  </view>
+</view>
