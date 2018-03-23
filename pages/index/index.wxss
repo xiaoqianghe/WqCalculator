@@ -22,3 +22,576 @@
 .button-hover{
    background-color: red;
 }
+
+
+.container {
+  position: fixed;
+  height: 100vh;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  z-index: 999;
+  overflow: hidden;
+  box-shadow: 10rpx 10rpx 5rpx #999999;
+  /* background-color: #00CCFF; */
+} 
+.header{
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+ /* 规定项目的方向 */
+  flex-direction: column;  
+
+/* justify-content 用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式。 */
+  justify-content: space-between;
+
+
+/* box-sizing 属性允许你以某种方式定义某些元素，以适应指定区域。
+例如，假如您需要并排放置两个带边框的框，可通过将 box-sizing 设置为 "border-box"。这可令浏览器呈现出带有指定宽度和高度的框，并把边框和内边距放入框中。 
+
+
+*/
+  box-sizing: border-box;
+
+  z-index: 9999
+
+}
+
+
+.header-text-center{
+  color: white;
+  font-size: 40rpx;
+  line-height: 100rpx;
+  text-shadow: 2rpx 2rpx  2rpx #666;
+  }
+
+.header-icon-left{
+   position:absolute;
+   top:0;
+   left: 0;
+   width: 100rpx;
+   height: 100rpx;
+   padding: 22rpx;
+   box-sizing: border-box;
+}
+
+
+.header-icon-right{
+    position:absolute;
+   top:0;
+   right: 0;
+   width: 100rpx;
+   height: 100rpx;
+   padding: 18rpx;
+   box-sizing: border-box;
+
+
+}
+
+.scroll-box{
+   position: absolute;
+  top:0px;
+  width:100%;
+  height: 100vh;
+  padding-top:100rpx;
+  box-sizing: border-box;
+}
+.number-box{
+  position: relative;
+  height: 148rpx;
+  width:100%;
+  margin:36rpx auto;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  clear: both
+
+}
+.number-box text{
+  color:white;
+  height: 148rpx;
+  float: right;
+  width:50%;
+  font-size:128rpx;
+  line-height: 148rpx;
+  font-weight: bold;
+  text-shadow: 2rpx 2rpx 2rpx #666;
+}
+.number-box image{
+  float: right;
+  height: 148rpx;
+  width: 148rpx;
+}
+
+.status-box{
+  height:  48rpx;
+  width: 100%;
+  margin: 36rpx auto;
+
+/* //定义flex子项在flex 的容器的当前行的侧轴放心上的对齐方式  项目位于容器的中心 */
+  align-items: center;
+
+
+/* //规定灵活项目的方向 */
+  flex-direction: column;
+
+/* 
+项目位于各行之间留有空白的容器内 */
+  justify-content: space-between;
+
+  /* 您需要并排放置两个带边框的框，可通过将 box-sizing 设置为 "border-box" */
+  box-sizing: border-box;
+
+/* clear属性指定段落的左侧或右侧不允许浮动的元素。  在左右两侧均不允许浮动元素。*/
+
+  clear: both
+}
+.status-box text{
+
+/* font - family属性指定一个元素的字体。 */
+  font-family: 'UKIJ Esliye';
+
+
+/* display 属性规定元素应该生成的框的类型。 */
+  display: block;
+  color: white;
+  height: 48rpx;
+  width: 100%;
+  text-align: center;
+  font-size:42rpx;
+/* 
+  line-height 属性设置行间的距离（行高）。 */
+  line-height: 48rpx;
+
+
+  /* text-shadow 属性向文本设置阴影 */
+/* 注释：text-shadow 属性向文本添加一个或多个阴影。该属性是逗号分隔的阴影列表，每个阴影有两个或三个长度值和一个可选的颜色值进行规定。省略的长度是 0。 */
+  text-shadow: 2rpx 2rpx 2rpx #666
+
+
+
+}
+.time-box{
+  height: 32rpx;
+  width: 100%;
+  margin: 24rpx auto;
+  align-items: center;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  box-sizing: border-box;
+  clear: both;
+}
+
+.time-box text{
+   font-family: 'UKIJ Esliye';
+
+   display: block;
+   color: #ccc;
+   height: 32rpx;
+   width: 100%;
+   text-align: center;
+   font-size: 28rpx;
+   line-height: 32rpx;
+   clear: both
+
+
+}
+
+.tree-box{
+
+  /* position 属性规定元素的定位类型。 */
+
+  /* absolute	
+生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。
+元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。
+fixed	
+生成绝对定位的元素，相对于浏览器窗口进行定位。
+元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。
+relative	
+生成相对定位的元素，相对于其正常位置进行定位。
+因此，"left:20" 会向元素的 LEFT 位置添加 20 像素。
+static	默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right 或者 z-index 声明）。
+inherit	规定应该从父元素继承 position 属性的值。 */
+
+  position: relative;
+  height: 128rpx;
+  width: 100%;
+  margin-bottom: 16rpx;
+  box-sizing: border-box;
+  clear: both
+}
+
+.tree-box .one-box{
+
+  height: 128rpx;
+  width: 33.3333%;
+  display: inline-block;
+  align-items: center;
+  box-sizing: border-box;
+  clear: both
+
+
+}
+
+.right-text{
+
+
+}
+
+.tree-box .one-box text{
+  display: block;
+  margin: 16rpx auto;
+  text-align: center;
+  color: white;
+  font-size: 28rpx;
+  text-shadow: 2rpx 2rpx 2rpx #666;
+}
+
+.tree-box .center-box{
+
+/* border-right 简写属性把右边框的所有属性设置到一个声明中。 */
+  border-right: 1px rgba(120,120,120,0.6) solid;
+  border-left: 1px rgba(120,120,120,0.6) solid;
+}
+
+
+.tree-icon{
+  display: block;
+  margin: 0 auto;
+  width: 80rpx;
+  height: 70rpx;
+  padding: 12rpx;
+  box-sizing: border-box;
+
+}
+.day-box{
+   position: relative;
+  height: 108rpx;
+  width: 100%;
+  margin-top: 4rpx;
+  padding: 12rpx;
+
+  box-sizing: border-box;
+  }
+
+
+  .day-box.daylabel{
+  color: white;
+    font-size: 32rpx;
+    line-height: 108rpx;
+    margin-left: rpx;
+    float: left;
+  }
+
+  .day-box.dayvalue{
+    color: white;
+    font-size: 32rpx;
+    width: 160rpx;
+    line-height: 108rpx;
+    margin-right: 16rpx;
+    float: right;
+
+   
+
+  }
+
+
+
+  .day-box .dayicon{
+  float: right;
+  width: 80rpx; 
+  height: 80rpx;
+  margin-top:14rpx;
+  margin-right:16rpx;
+  padding:2rpx;
+  box-sizing: border-box;
+}
+
+  /* .day-box.dayicon{
+
+    float: right;
+    width: 80rpx;
+    height: 80rpx;
+
+    margin-top: 14rpx;
+    margin-right: 16rpx;
+    padding: 2rpx;
+    box-sizing: border-box;
+
+
+
+  } */
+
+.aqi-box{
+    position: relative;
+    width: 100%;
+    margin-top: 16rpx;
+    padding-left: 16rpx;
+    padding-bottom: 10rpx;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.3);
+    clear: both;
+    }
+
+
+.aqi-box image{
+      margin: 0rpx 16rpx;
+      padding: 0rpx 30rpx;
+      width: 30%;
+      height: 140rpx;
+      box-sizing: border-box;
+    }
+/* 
+.paneltitle{
+      display: block;
+      width: 100%;
+      color: white;
+      text-align: left;
+      font-size: 34rpx;
+      line-height: 88rpx;
+      font-family: 'UKIJ Esliye';
+      box-sizing: border-box;
+}
+
+.aqitext{
+      display: block;
+       font-family: 'UKIJ Esliye';
+       text-align: left;
+       color: white;
+       width: 65%;
+       float: left;
+       font-size: 28rpx;
+       line-height: 64rpx;
+       margin: 6rpx 0;
+       padding: 0 10rpx;
+       background-color: rgba(0,0,0,0.3);
+       box-sizing: border-box;
+       clear: both
+     }
+
+.advice-box{
+       position: relative;
+       width: 100%;
+       padding-left: 10rpx;
+       padding-bottom: 10rpx;
+       margin-top: 16rpx;
+       background-color:rgba(0,0,0,0.3);
+       box-sizing: border-box;
+       clear: both;
+  }
+.adviceview{
+    display: block;
+    width: 48%;
+    min-height: 96rpx;
+    float: left;
+    margin: 6rpx 6rpx;
+    box-sizing: border-box;
+}
+.adviceicon{
+  display: block;
+  width: 16%;
+  height: 86rpx;
+  float: left;
+  padding: 16rpx 8rpx;
+  background-color: rgba(0,0,0,0.3);
+  box-sizing: border-box;
+  border-radius: 10rpx 0 0 10rpx;
+}
+
+.advicetext{
+
+  display: block;
+  text-align: left;
+  color: white;
+  width: 84%;
+  min-height: 86rpx;
+  float: left;
+  font-size: 28rpx;
+  line-height: 48rpx;
+  padding: 0rpx 10rpx;
+  background-color: rgba(120,120,120,0.2);
+  box-sizing: border-box;
+  border-radius: 10rpx 0 0 10rpx;
+
+
+
+}
+
+.advicetexttxl{
+     display: block;
+  text-align: left;
+  color: white;
+  width: 187%;
+  margin-left:-400rpx;
+  min-height: 96rpx;
+  float: left;
+  font-size:28rpx;
+  line-height: 48rpx;
+  padding: 0 10rpx;
+  background-color: rgba(120,120,120,0.2);
+  box-sizing: border-box;
+  border-radius: 10rpx 0 0 10rpx;
+
+
+} */
+
+
+.paneltitle{
+  display: block;
+  width: 100%;
+  color: white;
+  text-align: left;
+  font-size:34rpx;
+  line-height: 88rpx;
+  font-family: 'UKIJ Esliye';
+  box-sizing: border-box;
+}
+.aqitext{
+  display: block;
+  font-family: 'UKIJ Esliye';
+  text-align: left;
+  color: white;
+  width: 65%;
+  float: left;
+  font-size:28rpx;
+  line-height: 64rpx;
+  margin:6rpx 0;
+  padding: 0 10rpx;
+  background-color: rgba(120,120,120,0.2);
+  box-sizing: border-box;
+  border-radius: 6rpx;
+}
+.advice-box{
+  position: relative;
+  width:100%;
+  padding-left: 10rpx;
+  padding-bottom: 10rpx;
+  margin-top:16rpx;
+  background-color:rgba(0,0,0,0.3);
+  box-sizing: border-box;
+  clear: both
+}
+.adviceview{
+  display: block;
+  width: 48%;
+  min-height: 96rpx;
+  float: left;
+  margin:6rpx 6rpx;
+  box-sizing: border-box;
+}
+.adviceicon{
+  display: block;
+  width: 16%;
+  height: 86rpx;
+  float: left;
+  padding:16rpx 8rpx;
+  background-color: rgba(0,0,0,0.5);
+  box-sizing: border-box;
+  border-radius: 10rpx 0 0 10rpx;
+}
+.advicetext{
+  display: block;
+  text-align: left;
+  color: white;
+  width: 84%;
+  min-height: 86rpx;
+  float: left;
+  font-size:28rpx;
+  line-height: 48rpx;
+  padding: 0 10rpx;
+  background-color: rgba(120,120,120,0.2);
+  box-sizing: border-box;
+  border-radius: 10rpx 0 0 10rpx;
+}
+.advicetextxl{
+  display: block;
+  text-align: left;
+  color: white;
+  width: 187%;
+  margin-left:-400rpx;
+  min-height: 96rpx;
+  float: left;
+  font-size:28rpx;
+  line-height: 48rpx;
+  padding: 0 10rpx;
+  background-color: rgba(120,120,120,0.2);
+  box-sizing: border-box;
+  border-radius: 10rpx 0 0 10rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.menu {
+  position: fixed;
+  height: 100vh;
+  width:50%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  box-sizing: border-box;
+}
+.menu-scroll {
+  width: 100%;
+  height: 50vh;
+  margin-top: 4vh;
+}
+.menu .flower{
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  height: 20vh;
+
+
+}
+
+.wallpaper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 9
+}
+
+
+.menu-view{
+  width: 100%;
+  height: 68vh;
+  margin-top: 4vh;
+}
+.menu-icon{
+  float: right;
+  margin: 7rpx 12rpx;
+  width: 58rpx;
+  height: 58rpx;
+}
+.menulable{
+  /* //字体风格格式 */
+font-family: 'UKIJ Esliye' !important; 
+/* 设置百分比的行高 */
+line-height: 48rpx; 
+margin: 12rpx;
+font-size: 36rpx;
+float: right;
+color: #666;
+}
+
