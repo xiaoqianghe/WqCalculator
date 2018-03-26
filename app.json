@@ -2,7 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/calc/calc"
+    "pages/calc/calc",
+    "pages/toadd/toadd",
+    "pages/photo/photo"
   ],
   "window": {
     "backgroundTextStyle": "#0997F7",
@@ -20,11 +22,16 @@
         "pagePath": "pages/calc/calc",
         "text": "工具"
       },
+        {
+          "pagePath": "pages/photo/photo",
+          "text": "图片"
+        }
+        ,
       {
         "pagePath": "pages/logs/logs",
         "text": "日志"
       }
-     
+    
     ]
   },
   "networkTimeout": {

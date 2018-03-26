@@ -76,7 +76,9 @@ function getHomeData(){
 }
 function getCityList(){
     var citys=[];
+  
     for (var i=0;i<cityBank.length;i++){
+    
         var city={};
         city.name = cityBank[i].currentCity;
         city.index=i;
@@ -87,6 +89,7 @@ function getCityList(){
         }
         citys.push(city);
     }
+    
     return citys;
 }
 function getCity(){
@@ -310,14 +313,22 @@ function iconChanger(zhText){
                 //     statusData.wall="/images/cloud"+wallPaper;
                 //     break;
                 case "多云":
-                    zhText="/images/w/"+dayNight+"01";
-                    statusData.status = status;
-                    statusData.wall="/images/cloud"+wallPaper;
+                    // zhText="/images/w/"+dayNight+"01";
+                    // statusData.status = status;
+                    // statusData.wall="/images/cloud"+wallPaper;
+
+                zhText = "/images/w/" + dayNight + "01";
+                statusData.status = status;
+                statusData.wall = "/images/tocloud" + wallPaper;
                     break;
                 case "阴":
-                    zhText="/images/w/"+dayNight+"02";
-                    statusData.status = status;
-                    statusData.wall="/images/cloud"+wallPaper;
+                    // zhText="/images/w/"+dayNight+"02";
+                    // statusData.status = status;
+                    // statusData.wall="/images/cloud"+wallPaper;
+
+                zhText = "/images/w/" + dayNight + "02";
+                statusData.status = status;
+                statusData.wall = "/images/tocloud" + wallPaper;
                     break;
                 case "阴转小雨":
                     zhText = "/images/w/" + dayNight + "03";

@@ -33,28 +33,32 @@ Page({
 
         gogoright: -50,
         gogoleft: 0,
+        gogostatus: false,
 
 
         aboutWeatherData: '',
+
+        animationW: {},
+        animationM: {},
 
         cityMenus: [],
 
         theWeather: {
               weatherIcon: "/images/w/w01",
               date: 0,
-              currentCity: "南京111",
-              weatherDesc: "多云111",
+              currentCity: "北京",
+              weatherDesc: "晴",
               pm25: 6611,
               temperature: "24 ~ 14",
-              wind: " 无风11"
+              wind: " 无风"
         },
 
 
         otherWeather: {
           weatherIcon: "/images/w/w01",
           date: 0,
-          currentCity: "南京111",
-          weatherDesc: "多云111",
+          currentCity: "南京",
+          weatherDesc: "多云",
           pm25: 6611,
           temperature: "24 ~ 14",
           wind: " 无风11"
@@ -65,11 +69,47 @@ Page({
       },
 
 
+      setAdd: function () {
+        wx.navigateTo({
+          url: '../toadd/toadd'
+        })
+      },
+
+      setMenuNatural: function(){
+
+        var that=this;
+
+        var animationW = wx.createAnimation({
+          duration: 100
+        });
+        var animationM = wx.createAnimation({
+          duration: 100
+        });
+        var menuStatus = false;
+
+        if(this.data.gogostatus){
+
+          animationW.width("100%").height("100vh").top("0vh").left("0%").step();
+          animationM.right("40%").step();
+          menuStatus=false
 
 
 
+        }else{
 
+          animationW.width("90%").height("90vh").top("5vh").left("-40%").step();
+          animationM.right("0%").step();
+          menuStatus = true;
+        }
 
+        this.setData({
+          animationW: animationW.export(),
+          animationM: animationM.export(),
+          gogostatus: menuStatus,
+          cityMenus: common.getCityList()
+
+           })
+        },
 
       menuTab: function (e) {
         wx.showLoading();
