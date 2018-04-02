@@ -65,10 +65,14 @@ App({
 
 
   },
-  globalData: {
-    userInfo: null
-  }
+  // globalData: {
+  //   userInfo: null
+  // }
 
+
+globalData: {
+    COLLECT_IMAGE_KEY: 'COLLECT_IMAGE_KEY',
+  }
 
 
 })

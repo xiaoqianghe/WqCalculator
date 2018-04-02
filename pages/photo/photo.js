@@ -18,7 +18,8 @@ Page({
     var imageIndex = event.currentTarget.dataset.imageIndex;
     var imageUrl = this.data.meizi.results[imageIndex].url;
     wx.navigateTo({
-      url: '/pages/meizi/show-image/show-image?imageUrl=' + imageUrl + '&fromWhere=meizi',
+      // url: '/pages/meizi/show-image/show-image?imageUrl=' + imageUrl + '&fromWhere=meizi',
+       url: '/pages/photo/show-image/show-image?imageUrl=' + imageUrl + '&fromWhere=meizi',
       success: function (res) {
         // success
       },

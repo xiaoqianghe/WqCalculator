@@ -4,7 +4,9 @@
     "pages/logs/logs",
     "pages/calc/calc",
     "pages/toadd/toadd",
-    "pages/photo/photo"
+    "pages/photo/photo",
+    "pages/photo/show-image/show-image",
+    "pages/photo/collected/collected"
   ],
   "window": {
     "backgroundTextStyle": "#0997F7",
@@ -22,16 +24,18 @@
         "pagePath": "pages/calc/calc",
         "text": "工具"
       },
+      {
+        "pagePath": "pages/photo/photo",
+        "text": "图片"
+      },
         {
-          "pagePath": "pages/photo/photo",
-          "text": "图片"
-        }
-        ,
+          "pagePath": "pages/photo/collected/collected",
+          "text": "收藏"
+        },
       {
         "pagePath": "pages/logs/logs",
         "text": "日志"
       }
-    
     ]
   },
   "networkTimeout": {

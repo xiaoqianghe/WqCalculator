@@ -1,0 +1,8 @@
+<!--pages/photo/show-image/show-image.wxml-->
+<!-- <text>pages/photo/show-image/show-image.wxml</text> -->
+
+<view class=".container" catchlongtap="onLongTap">
+
+<image src="{{imageUrl}}" mode="aspectFit" binderror="onBindError" bindload="onBindLoad"></image>
+
+</view>
