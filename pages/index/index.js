@@ -71,7 +71,7 @@ Page({
 
       setAdd: function () {
         wx.navigateTo({
-          url: '../toadd/toadd'
+          url: '../otheradd/otheradd'
         })
       },
 

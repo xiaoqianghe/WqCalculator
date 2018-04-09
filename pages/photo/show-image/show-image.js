@@ -126,7 +126,7 @@ Page({
     if(fromWhere='photo'){
 
       wx.showActionSheet({
-        itemList: ['保存照片','收藏照片'],
+        itemList: ['保存照片', '收藏照片', '分享照片'],
         success: function(res){
 
           switch(res.tapIndex){
@@ -140,6 +140,9 @@ Page({
             case 1:
 
             that.collectedImage();
+
+            case 2:
+            that.toShareImage();
 
             break;
           }
@@ -187,6 +190,14 @@ Page({
 
 
   },
+
+
+  //分享 图片
+
+  toShareImage:function(){
+
+    this.onShareAppMessage
+},
 
 
 
@@ -309,12 +320,10 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
-    if(!this.data.imageUrl){
+  if(!this.data.imageUrl){
       retun;
     }
-
-    return {
+  return {
       title: '分享图片',
       desc: '妹子-.-',
       path: this.data.imageUrl,

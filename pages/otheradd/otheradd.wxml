@@ -1,0 +1,21 @@
+<!--pages/otheradd/otheradd.wxml-->
+<!-- <text>pages/otheradd/otheraddwxml</text> -->
+
+<view class="search-box" hidden="true">
+<input class="place-box"></input>
+</view>
+<!-- 
+<view  class="place-box">
+
+<text>hahah</text>
+<view style="cleat:both"></view>
+</view> -->
+
+<text class="paneltitle">城市列表</text>
+<view class="place-box">
+
+<text wx:for="{{chinaCitys}}" bindtap="chinaTaped" id="{{index}}" wx:key="unique">{{item.cityzh}}</text>
+
+<view style="cleat:both"></view>
+
+</view>

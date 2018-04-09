@@ -47,8 +47,8 @@ Page({
     var that = this;
     var page = this.data.page + 1;
     wx.request({
-      url: 'http://gank.io/api/data/%E7%A6%8F%E5%88%A9/10/' + page,
-
+      url: 'https://gank.io/api/data/%E7%A6%8F%E5%88%A9/10/' + page,
+      //url: 'https://gank.io/api/data/%E7%A6%8F%E5%88%A9/10/1',
       // url: 'http://gank.io/api/data/%E7%A6%8F%E5%88%A9/10/1',
       // method: 'GET',
       data: {

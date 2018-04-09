@@ -1,4 +1,4 @@
-// pages/toadd/toadd.js
+ 1111// pages/toadd/toadd.js
 Component({
   /**
    * 组件的属性列表

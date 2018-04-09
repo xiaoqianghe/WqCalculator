@@ -6,7 +6,9 @@
     "pages/toadd/toadd",
     "pages/photo/photo",
     "pages/photo/show-image/show-image",
-    "pages/photo/collected/collected"
+    "pages/photo/collected/collected",
+    "pages/photo/localphoto/localphoto",
+    "pages/otheradd/otheradd"
   ],
   "window": {
     "backgroundTextStyle": "#0997F7",
@@ -28,10 +30,10 @@
         "pagePath": "pages/photo/photo",
         "text": "图片"
       },
-        {
-          "pagePath": "pages/photo/collected/collected",
-          "text": "收藏"
-        },
+      {
+        "pagePath": "pages/photo/collected/collected",
+        "text": "收藏"
+      },
       {
         "pagePath": "pages/logs/logs",
         "text": "日志"

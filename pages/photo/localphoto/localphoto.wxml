@@ -1,0 +1,12 @@
+<!--pages/photo/localphoto/localphoto.wxml-->
+<text>pages/photo/localphoto/localphoto.wxml</text>
+
+
+<view class="container">
+  <block wx:for="{{collectedImages}}" wx:key="{{item}}">
+    <view class="image-item" catchtap="onImageTap"  catchlongtap="onLongImageTap" data-image-url="{{item}}">
+         <image src="{{item}}" mode="aspectFill" ></image>
+    </view>
+  </block>
+</view>
+

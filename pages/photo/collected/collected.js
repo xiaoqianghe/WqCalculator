@@ -25,14 +25,14 @@ Page({
       success: function(res) {
         //success
 
-        debugger
+      
 
         console.log("success ::");
         that.setData({collectedImages: res.data});
-        debugger
+       
         console.log("res.data ::"+res.data);
 
-        debugger
+        
         // console.log("collectedImages::" + collectedImages);
 
 
