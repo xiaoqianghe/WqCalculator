@@ -1,5 +1,6 @@
 // pages/otheradd/otheradd.js
 
+
 var common =require('../../utils/common.js')
 
 var xjCitys = {};
@@ -24,36 +25,48 @@ Page({
     var city=xjCitys.citys[itemId];
 
     wx.redirectTo({
+
+
       url: '../index/index?name=' + city.cityzh + '&zh=' + city.cityzh + '&location=' + city.location
 
+  
 
-    })
+      })
 
 
   },
 
   chinaTaped:function(e){
-
     var itemId=e.target.id;
     var city =xjCitys.province[itemId];
+      console.log("===========chinaTaped");
+    console.log("===========chinaTaped::url::"+'../index/index?name=' + city.cityzh + '&zh=' + city.cityzh + '&location=' + city.location);
 
-    console.log("===========chinaTaped")
-    console.log("===========chinaTaped::url::"+'../index/index?name=' + city.cityzh + '&zh=' + city.cityzh + '&location=' + city.location)
     // wx.redirectTo({
-      
-    //   // url: '../index/index?name=' + city.cityzh + '&zh=' + city.cityzh + '&location=' + city.location
-
-    //   url: '../index/index'
-
+    //   url: '../logs/logs'
     // })
 
 
-    wx.redirectTo({
-      url: '../index/index?name=' + city.cityzh + '&zh=' + city.cityzh + '&location=' + city.location
+    // wx.switchTab({
+    //   url: '../logs/logs'
+    // })
+
+
+  
+     wx.redirectTo({
+    
+      // url: '../index/index?name=' + city.cityzh + '&zh=' + city.cityzh + '&location=' + city.location
+
+       url: '../index/index?name=' + city.cityzh + '&zh=' + city.cityzh + '&location=' + city.location
+
+  
     })
 
-   
-  },
+ 
+},
+
+
+
 
 
 

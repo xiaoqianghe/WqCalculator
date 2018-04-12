@@ -2,7 +2,7 @@
 <!-- <text>pages/otheradd/otheraddwxml</text> -->
 
 <view class="search-box" hidden="true">
-<input class="place-box"></input>
+ <input placeholder=""/>
 </view>
 <!-- 
 <view  class="place-box">

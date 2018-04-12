@@ -1,14 +1,14 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/otheradd/otheradd",
     "pages/logs/logs",
     "pages/calc/calc",
     "pages/toadd/toadd",
     "pages/photo/photo",
     "pages/photo/show-image/show-image",
     "pages/photo/collected/collected",
-    "pages/photo/localphoto/localphoto",
-    "pages/otheradd/otheradd"
+    "pages/photo/localphoto/localphoto"
   ],
   "window": {
     "backgroundTextStyle": "#0997F7",
@@ -18,10 +18,7 @@
   },
   "tabBar": {
     "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "首页"
-      },
+      
       {
         "pagePath": "pages/calc/calc",
         "text": "工具"

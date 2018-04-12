@@ -48,6 +48,8 @@
           <!-- <text class="menulabel" bindtap="menuTab" id="{{index}}">{{item.name}}</text> -->
         
            <text class="menulabel" bindtap="menuTab" id="{{index}}">{{item.name}}</text>
+
+             <text class="menulabel" bindtap="menuTab" id="{{index}}">{{8888}}</text>
         </view>
         <view style="clear:both"></view>
   </scroll-view>

@@ -13,6 +13,7 @@ function init(){
         var fail = function(data) { 
             console.log(data) 
         }; 
+       
         var value = wx.getStorageSync('citys')
         if (value) {
             // Do something with return value
