@@ -586,7 +586,7 @@ inherit	规定应该从父元素继承 position 属性的值。 */
   width: 58rpx;
   height: 58rpx;
 }
-.menulabl{
+.menulabel{
   /* //字体风格格式 */
 font-family: 'UKIJ Esliye' !important; 
 /* 设置百分比的行高 */
