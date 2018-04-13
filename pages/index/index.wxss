@@ -599,3 +599,45 @@ color: #666;
 
 
 
+
+.float_buttom{  
+  width: 100vw;height: 14.6vw;background: #fff;margin-top: 1.6vw;  
+  display: flex;flex-direction: row;position: fixed;bottom: 0  
+} 
+
+.circle-float{  
+  color: #ffffff;  
+  position: fixed;  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+  bottom: 20rpx;  
+  right: 20rpx;  
+  width: 120rpx;  
+  height: 120rpx;  
+  border-radius: 50%;  
+  font-size: 28rpx;  
+  background: #4EEE94;  
+} 
+
+
+
+.kf_button{
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+  height: 100rpx;
+  right: 0;
+  bottom: 20rpx;
+  position: fixed;
+}
+.kf_button::after{
+  border: 0px;
+}
+.kf_image{
+  z-index: 9999;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+
+

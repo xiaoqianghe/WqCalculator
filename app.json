@@ -18,7 +18,6 @@
   },
   "tabBar": {
     "list": [
-      
       {
         "pagePath": "pages/calc/calc",
         "text": "工具"

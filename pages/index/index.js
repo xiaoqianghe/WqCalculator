@@ -110,8 +110,9 @@ Page({
 
            })
         },
-
+//历史城市
       menuTab: function (e) {
+
         wx.showLoading();
         var itemId = e.target.id;
         var that = this;
@@ -129,6 +130,7 @@ Page({
           return null;
         };
         var success = function (data) {
+       
           wx.hideLoading();
           var weatherData = data.currentWeather[0];
           weatherData.fullData = data.originalData.results[0];
@@ -153,12 +155,9 @@ Page({
           weatherData.wind = common.windHelper(weatherData.wind);
           weatherData.pmpm = common.pmText(weatherData.pm25);
 
-          aboutWeatherData = '城市：' + weatherData.currentCity + '\n' + 'PM2.5：' + weatherData.pm25 + '\n' + '日期：' + weatherData.date + '\n' + '温度：' + weatherData.temperature + '\n' + '天气：' + weatherData.weatherDesc + '\n' + '风力：' + weatherData.wind + '\n'; 
-
-
+          
           that.setData({
             theWeather: weatherData,
-            theWeather,
             today: common.getToday(),
             wall: tudayStatus.wall
           });

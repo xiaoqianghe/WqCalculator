@@ -29,16 +29,18 @@
   </view>
 </view> -->  
 
+
+  
+<button class="kf_button" open-type="contact" session-from="weapp">
+    <image class="kf_image" src="../../images/positiongrey.png"></image>
+</button>
    
  <view class="menu" animation="{{animationM}}"  style="right:{{gogoright}}%"> 
 
 
    <!-- <view class="menu"   style="right:{{gogoright}}%">  -->
 
-
-
-
-  <scroll-view scroll-y="true" class="menu-scroll">
+<scroll-view scroll-y="true" class="menu-scroll">
         <view class="menu-view" wx:for="{{cityMenus}}" wx:key="unique">
           
 
@@ -71,7 +73,7 @@
 
 </view>  
 
-
+<view class="float_buttom"/>
 
  <view class="container"  animation="{{animationW}}" style="width:{{pageSize}}%;height:{{pageSize}}vh;left:{{gogoleft}}%;top{{pagetop}}vh">
 
