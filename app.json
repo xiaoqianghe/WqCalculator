@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/index/index",
+   "pages/index/index",
     "pages/otheradd/otheradd",
     "pages/logs/logs",
     "pages/calc/calc",
@@ -25,14 +25,6 @@
       {
         "pagePath": "pages/photo/photo",
         "text": "图片"
-      },
-      {
-        "pagePath": "pages/photo/collected/collected",
-        "text": "收藏"
-      },
-      {
-        "pagePath": "pages/logs/logs",
-        "text": "日志"
       }
     ]
   },

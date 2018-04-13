@@ -3,6 +3,12 @@
 
 <view class="container">
 
+<image class="buttom_image" src="../../images/tabback.png"  bindtap="toallback"></image>
+
+
+<image class="buttom_left_image" src="../../images/icon/collected.png"  bindtap="toallcollected"></image>
+
+
   <block wx:for="{{meizi.results}}" wx:key="{{item.url}}">
     <view class="image-item" catchtap="onImageTap" data-image-index="{{index}}">
       <image src="{{item.url}}" mode="aspectFill"></image>

@@ -35,6 +35,23 @@ Page({
   
   },
 
+
+  toallback: function () {
+
+    wx.navigateTo({
+      url: '../index/index',
+    })
+
+  },
+
+
+
+
+
+  handletouchmove: function (event) {
+    console.log(" handletouchmove :"+event)
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

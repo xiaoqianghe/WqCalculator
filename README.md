@@ -154,6 +154,16 @@ border-box
 通过从已设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度。
 inherit	规定应从父元素继承 box-sizing 属性的值
 
+==============================
+
+
+微信小程序 catchtap 和catchlongtap 
+
+
+catchtap:点击按
+
+catchlongtap: 长按
+
   
 
 

@@ -1,5 +1,8 @@
 <!--pages/calc/calc.wxml-->
-<view class="">
+<view class="" >
+<image class="buttom_image" src="../../images/tabback.png"  bindtap="toallback"></image>
+
+
   <view class="layout-top">
       <view class="screen">
       {{screenData}}

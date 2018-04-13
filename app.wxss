@@ -8,3 +8,28 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 }  */
+
+
+
+  .buttom_image{
+
+  width: 10.6vw;
+  height: 10.6vw;
+  margin-top: 1.6vw;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 20rpx;
+   right: 20rpx;  
+  }
+
+    .buttom_left_image{
+  width: 10.6vw;
+  height: 10.6vw;
+  margin-top: 1.6vw;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 20rpx;
+   left: 20rpx;  
+  }

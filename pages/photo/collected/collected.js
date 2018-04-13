@@ -8,6 +8,8 @@ Page({
 
     collectedImages: [],
     left: 25,
+
+    longtap: false,
   
   },
 
@@ -51,41 +53,43 @@ Page({
   },
 
   onLongImageTap: function(event){
-
-    console.log('long');
-
+    console.log('===============onLongImageTap');
     var that=this;
+
+    //关于cang
+    that.setData({
+      longtap: true,
+    })
+    that.timer = setTimeout(() => {
+      that.setData({
+        longtap: false,
+      })
+    }, 500);
+
+   
+
+
     wx.showModal({
       title: '删除收藏',
       content: '确定要删除收藏吗',
-
-
       success: function(res){
-
-        if(res.confirm){
-
-          console.log('用户点击了确定')
-
-          var imageUrl=event.currentTarget.dataset.imageUrl;
-          var collectedImages=that.data.collectedImage;
-
-          for(var i=0;i<collectedImages.length;i++){
-
-            if(collectedImages[i]==imageUrl){
-
-              collectedImages.splice(i, 1);
+      if(res.confirm){
+        console.log('用户点击了确定')
+        var imageUrl=event.currentTarget.dataset.imageUrl;
+        var collectedImages=that.data.collectedImages;
+        for(var i=0;i<collectedImages.length;i++){
+          if(collectedImages[i]==imageUrl){
+                collectedImages.splice(i, 1);
               break;
-
-            }
-
-
           }
-
-          that.setData({collectedImages: collectedImages})
+        }
+        that.setData({collectedImages: collectedImages})
           
           var app =getApp();
 
-          var key=app.golbalData.COLLECT_IMAGE_KEY;
+         
+
+          var key = app.globalData.COLLECT_IMAGE_KEY;
          
           wx.setStorage({
             key: key,
@@ -109,13 +113,29 @@ Page({
 
   },
 
+ 
+
 
   onImageTap: function(event){
 
-    var imageUrl=event.currentTarget.dataSet.imageUrl;
+
+    let that = this;
+    if (that.data.longtap) {
+      me.setData({
+        longtap: false,
+      })
+      clearTimeout(me.timer);
+      return;
+    }
+
+    
+
+    console.log('===============onImageTap');
+
+    var imageUrl=event.currentTarget.dataset.imageUrl;
     wx.navigateTo({
       // url: '/pages/meizi/show-image/show-image?imageUrl=' + imageUrl + '&fromWhere=meizi',
-      url: '/pages/photo/show-image/show-image?imageUrl=' + imageUrl + '&fromWhere=meizi',
+      url: '../show-image/show-image?imageUrl=' + imageUrl + '&fromWhere=meizi',
       success: function (res) {
         // success
       },

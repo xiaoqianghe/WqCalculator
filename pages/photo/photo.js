@@ -1,6 +1,11 @@
 // pages/photo/photo.js
 Page({
 
+
+
+
+
+
   /**
    * 页面的初始数据
    */
@@ -12,6 +17,29 @@ Page({
     isLoadMore: false,
   
   },
+
+
+  onShareAppMessage: function (res) {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+
+      console.log("==============res.from === 'button")
+      console.log(res.target)
+    }
+    return {
+      title: '自定义转发标题',
+      path: '/pages/photo/photo',
+      success: function (res) {
+        // 转发成功
+      },
+      fail: function (res) {
+        // 转发失败
+      }
+    }
+  },
+
+
+
 
 
   onImageTap: function (event) {
@@ -94,7 +122,7 @@ Page({
   refreshData: function () {
     var that = this;
     wx.request({
-      url: 'http://gank.io/api/data/%E7%A6%8F%E5%88%A9/10/1',
+      url: 'https://gank.io/api/data/%E7%A6%8F%E5%88%A9/10/1',
       data: {
       },
       // method: 'GET',
@@ -166,6 +194,31 @@ Page({
   
   },
 
+
+
+  toallback: function () {
+
+    wx.navigateTo({
+      url: '../index/index',
+    })
+
+  },
+
+  toallcollected: function () {
+
+    wx.navigateTo({
+      url: '../photo/collected/collected',
+    })
+
+  },
+
+  toallshare: function () {
+
+  
+
+  },
+
+
   // /**
   //  * 页面相关事件处理函数--监听用户下拉动作
   //  */
@@ -180,10 +233,10 @@ Page({
   
   // },
 
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
+  // /**
+  //  * 用户点击右上角分享
+  //  */
+  // onShareAppMessage: function () {
   
-  }
+  // }
 })

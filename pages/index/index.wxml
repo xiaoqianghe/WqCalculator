@@ -31,9 +31,17 @@
 
 
   
-<button class="kf_button" open-type="contact" session-from="weapp">
-    <image class="kf_image" src="../../images/positiongrey.png"></image>
-</button>
+<!-- <button class="kf_button" open-type="contact" session-from="weapp">
+    <image class="kf_image" src="../../images/menu.png"></image>
+</button> -->
+
+
+<!-- <view>  
+<contact-button type="default-dark" size="20" session-from="weapp" class="img-plus-style zindex100 yc">
+</contact-button>
+<image src="../../images/menu.png" class="img-plus-style"></image> 
+<image src="../../images/meny.png" class="img-plus-style1" bindtap="calling"></image>
+</view> -->
    
  <view class="menu" animation="{{animationM}}"  style="right:{{gogoright}}%"> 
 
@@ -84,6 +92,7 @@
                 <!-- <text class="header-text-center">深圳</text>    -->
                <image class="header-icon-left" bindtap="setAdd" src="../../images/plus.png"></image> 
             </view>
+
 
 
 
@@ -203,14 +212,57 @@
     <view class="holiday-box" hidden="true">
       <view style="clear:both"></view>
     </view>  -->
+
+
+
+
+ <!-- <button class="kf_button" bindtap="toalllook" >
+    <image class="kf_image" src="../../images/tabindex.png"></image>
+</button> -->
+
+<!-- open-type="contact" session-from="weapp" -->
+
+ <!-- <button class="buttom"></button>   -->
+
+  <image class="buttom_image" src="../../images/tabindex.png"  bindtap="toalllook"></image>
+
+<!-- 
+<view>  
+<contact-button type="default-dark" size="20" session-from="weapp" class="img-plus-style zindex100 yc">
+</contact-button>
+<image src="../../images/menu.png" class="img-plus-style"></image> 
+<image src="../../images/menu.png" class="img-plus-style1" bindtap="calling"></image>
+</view> -->
       
 
 
     </scroll-view>
+
+
+
+
+
 </view>
 
 
+
+
+
  <image class="wallpaper" animation="{{animationW}}" style="width:{{pagesize}}%;height:{{pagesize}}vh;left:{{gogoleft}}%;top:{{pagetop}}vh" src="{{wall}}.jpg"></image>
+<!-- 
+ <button class="kf_button" open-type="contact" session-from="weapp">
+    <image class="kf_image" src="../../images/menu.png"></image>
+</button>
+
+<button class="buttom"></button>
+
+
+<view>  
+<contact-button type="default-dark" size="20" session-from="weapp" class="img-plus-style zindex100 yc">
+</contact-button>
+<image src="../../images/menu.png" class="img-plus-style"></image> 
+<image src="../../images/meny.png" class="img-plus-style1" bindtap="calling"></image>
+</view> -->
 
 
 

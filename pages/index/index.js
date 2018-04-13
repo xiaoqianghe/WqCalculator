@@ -110,6 +110,16 @@ Page({
 
            })
         },
+
+      //点击右下角的按钮跳转
+
+      toalllook:function(e){
+        wx.switchTab({
+          url: '../calc/calc',
+        })
+},
+
+
 //历史城市
       menuTab: function (e) {
 
@@ -332,6 +342,23 @@ toCalc:function(){
     wx.navigateTo({
       url: '../calc/calc',
     })
+
+},
+
+
+onShareAppMessage: function () {
+
+  console.log("=======onShareAppMessage::" + this.data.imageUrl)
+  debugger
+  if (!this.data.imageUrl) {
+    debugger
+    retun;
+  }
+  return {
+    title: '不错的小程序',
+    desc: '不错的小程序 哦',
+    path: '../index/index',
+  }
 
 },
 

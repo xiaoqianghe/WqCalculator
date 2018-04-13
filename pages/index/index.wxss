@@ -600,6 +600,32 @@ color: #666;
 
 
 
+
+ .buttom{
+
+  width: 14.6vw;
+  height: 14.6vw;
+  background: #22DDDD;
+  margin-top: 1.6vw;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 20rpx;
+   right: 20rpx;  
+  } 
+
+  .buttom_image{
+
+  width: 14.6vw;
+  height: 14.6vw;
+  margin-top: 1.6vw;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 20rpx;
+   right: 20rpx;  
+  }
+
 .float_buttom{  
   width: 100vw;height: 14.6vw;background: #fff;margin-top: 1.6vw;  
   display: flex;flex-direction: row;position: fixed;bottom: 0  
@@ -621,14 +647,16 @@ color: #666;
 } 
 
 
-
+  /* background-color: rgba(255, 255, 255, 0); */
 .kf_button{
-  background-color: rgba(255, 255, 255, 0);
   border: 0px;
+  width: 140rpx;
   height: 100rpx;
-  right: 0;
+  right: 10rpx;
   bottom: 20rpx;
   position: fixed;
+  background:#AAAAAA;
+  align-items:center;
 }
 .kf_button::after{
   border: 0px;
@@ -637,7 +665,32 @@ color: #666;
   z-index: 9999;
   width: 100rpx;
   height: 100rpx;
+  align-items:center;
 }
+
+
+
+
+
+
+.img-plus-style {  
+  height: 70rpx;  
+  width: 70rpx;  
+  position: fixed;  
+  bottom: 220rpx;  
+  right: 30rpx;  
+  opacity: 0.7
+}  
+.img-plus-style1 {  
+  height: 70rpx;  
+  width: 70rpx;  
+  position: fixed;  
+  bottom: 130rpx;  
+  right: 30rpx;   
+  opacity: 0.7
+}  
+.zindex100{z-index: 100}
+.yc{opacity: 0}
 
 
 

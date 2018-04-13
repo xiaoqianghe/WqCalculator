@@ -15,7 +15,7 @@ Page({
   },
 
 
-  hideToast: function(){
+   hideToast: function(){
 
     wx.hideToast();
   },
@@ -24,7 +24,7 @@ Page({
   showToast: function(title,icon,duration){
 
     wx.showToast({
-      title: 'title',
+      title: title,
       icon:icon,
       duration:duration,
     })
@@ -192,12 +192,16 @@ Page({
   },
 
 
-  //分享 图片
+//   //分享 图片
 
-  toShareImage:function(){
+//   toShareImage:function(){
 
-    this.onShareAppMessage
-},
+//     // this.onShareAppMessage
+
+//     console.log("==============toShareImage");
+
+//     this.onShareAppMessage
+// },
 
 
 
@@ -316,11 +320,15 @@ Page({
 
   },
 
-  /**
-   * 用户点击右上角分享
-   */
+  // /**
+  //  * 用户点击右上角分享
+  //  */
   onShareAppMessage: function () {
+
+    console.log("=======onShareAppMessage::" + this.data.imageUrl)
+    debugger
   if(!this.data.imageUrl){
+    debugger
       retun;
     }
   return {
@@ -330,4 +338,22 @@ Page({
     }
   
   }
+
+  // onShareAppMessage: function (res) {
+  //   debugger
+  //   if (res.from === 'button') {
+  //     // 来自页面内转发按钮
+  //     console.log(res.target)
+  //   }
+  //   return {
+  //     title: '自定义转发标题',
+  //     path: '/page/user?id=123',
+  //     success: function (res) {
+  //       // 转发成功
+  //     },
+  //     fail: function (res) {
+  //       // 转发失败
+  //     }
+  //   }
+  // }
 })
