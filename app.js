@@ -74,8 +74,13 @@ App({
 
 globalData: {
     COLLECT_IMAGE_KEY: 'COLLECT_IMAGE_KEY',
-  }
+  },
 
+
+
+AllAppName: {
+    ALL_APP_NAME_TITLE: 'FromWhere',
+  }
 
 
 

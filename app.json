@@ -1,6 +1,6 @@
 {
   "pages": [
-   "pages/index/index",
+    "pages/index/index",
     "pages/otheradd/otheradd",
     "pages/logs/logs",
     "pages/calc/calc",
@@ -8,12 +8,13 @@
     "pages/photo/photo",
     "pages/photo/show-image/show-image",
     "pages/photo/collected/collected",
-    "pages/photo/localphoto/localphoto"
+    "pages/photo/localphoto/localphoto",
+    "pages/aboutmap/aboutmap"
   ],
   "window": {
     "backgroundTextStyle": "#0997F7",
     "navigationBarBackgroundColor": "#0997F7",
-    "navigationBarTitleText": "WqCalculator",
+    "navigationBarTitleText": "FromWhere",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -21,6 +22,11 @@
       {
         "pagePath": "pages/calc/calc",
         "text": "工具"
+      },
+
+      {
+        "pagePath": "pages/aboutmap/aboutmap",
+        "text": "地图"
       },
       {
         "pagePath": "pages/photo/photo",

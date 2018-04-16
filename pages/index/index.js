@@ -14,7 +14,7 @@ Page({
       onShareAppMessage: function(){
 
               return {
-              title: '微信天气',
+                title: app.AllAppName.ALL_APP_NAME_TITLE,
               desc:'',
               path:'/pages/index/index'
 
@@ -24,7 +24,7 @@ Page({
 
 
       data: {
-        motto: 'WqCalculator',
+        motto: 'FromWhere',
         userInfo: {},
         hasUserInfo: false,
         canIUse: wx.canIUse('button.open-type.getUserInfo'),
