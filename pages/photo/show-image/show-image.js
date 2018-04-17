@@ -289,27 +289,21 @@ Page({
 
   saveImage:function(){
 
-    if(!this.data.Image){
-
-      return;
-
-    }
+    if (!this.data.isImageShow){
+            return;
+      }
 
     wx.downloadFile({
-
       url:this.data.imageUrl,
       success:function(res){
-
-        var temFilePath=res.temFilePath;
+        var tempFilePath=res.tempFilePath;
         wx.saveFile({
-          tempFilePath: temFilePath,
-
-          success:function(){
-  wx.showToast({
-
-    title:'保存成功',
-    icon:'success',
-  })
+          tempFilePath: tempFilePath,
+          success: function(res){
+          wx.showToast({
+            title:'保存成功',
+            icon:'success',
+          })
 
           }
         })
