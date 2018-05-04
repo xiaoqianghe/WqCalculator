@@ -9,7 +9,9 @@
     "pages/photo/show-image/show-image",
     "pages/photo/collected/collected",
     "pages/photo/localphoto/localphoto",
-    "pages/aboutmap/aboutmap"
+    "pages/aboutmap/aboutmap",
+    "pages/otherclassic/otherclassic",
+    "pages/classic/classic"
   ],
   "window": {
     "backgroundTextStyle": "#0997F7",
@@ -19,11 +21,15 @@
   },
   "tabBar": {
     "list": [
+
+      {
+        "pagePath": "pages/classic/classic",
+        "text": "分类"
+      },
       {
         "pagePath": "pages/calc/calc",
         "text": "工具"
       },
-
       {
         "pagePath": "pages/aboutmap/aboutmap",
         "text": "地图"

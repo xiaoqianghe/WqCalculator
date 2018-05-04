@@ -71,7 +71,11 @@ Page({
 
       setAdd: function () {
         wx.navigateTo({
-          url: '../otheradd/otheradd'
+          // url: '../otheradd/otheradd'
+
+          // url: '../otherclassic/otherclassic'
+
+          url: '../classic/classic'
         })
       },
 
